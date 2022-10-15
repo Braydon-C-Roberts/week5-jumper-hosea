@@ -9,6 +9,11 @@ ASCII_GRAPHIC = r"""   ___
 """
 
 
+
+class Graphics:
+   def __init__(self, director):
+      self.director = director
+
 def build_image(line):
    ascii_split = ASCII_GRAPHIC.split("\n")
    for _ in range(line):
